@@ -9,14 +9,14 @@ var xcoord = 0;
 var ycoord = 0;
 var rwidth = 0;
 var rheight = 0;
+var items = [45, 85];
 while (ycoord < height) {
   strokeWeight(4);
   stroke(0,0,0);
-
   
   while (xcoord < width) {
-    rwidth = random(20,80);
-  	rheight = random(50,85);
+    rwidth = items[Math.floor(Math.random()*items.length)] ;
+  	rheight = items[Math.floor(Math.random()*items.length)] ;
   	if ((width - xcoord) <= 80) {
       fill(random(255), random(255), random(255));
     	rect(xcoord, ycoord, width - xcoord, rheight);
