@@ -1,4 +1,4 @@
-// Asignment
+// Assignment
 
 background(255);
 colorMode(HSB);
